@@ -39,40 +39,76 @@ a:focus {
   border-bottom: none;
 }
 
-nav {
+.navbar {
   background: #D5E1DD;
   border-bottom: blue;
-  padding: 25px 0;
-}
-nav ul {
   margin-bottom: 0;
 }
-nav li {
-  display: block;
-  margin: 10px 0;
+.navbar ul {
+  margin-bottom: 0;
 }
-nav a,
-nav a:link,
-nav a:visited,
-nav a:active {
+.navbar li {
+  display: block;
+  margin: 15px 0;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #F2583E;
+  background: transparent;
+}
+.navbar a,
+.navbar a:link,
+.navbar a:visited,
+.navbar a:active {
   font-family: 'Montserrat';
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 2px solid #2B3E42;
+  text-decoration: none;
+  border-bottom: 0;
+  padding: 0;
 }
-nav a:hover,
-nav a:active {
+.navbar a:hover,
+.navbar a:active {
   border-bottom: none;
 }
-@media(min-width: 700px) {
-  nav li {
+.nav {
+  margin: 0;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+.navbar-collapse {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+}
+@media(min-width: 768px) {
+  .navbar {
+    padding: 0;
+    height: 50px;
+  }
+  .navbar li {
     display: inline-block;
     margin: 0 10px;
+  }
+  .navbar a,
+  .navbar a:link,
+  .navbar a:visited,
+  .navbar a:active {
+    line-height: 50px;
+  }
+  .navbar-header,
+  .navbar-nav,
+  .navbar-nav > li {
+    float: none;
   }
 }
 
 .jumbotron {
+  margin-top: 50px;
   margin-bottom: 60px;
   color: white;
   background: #F2583E;

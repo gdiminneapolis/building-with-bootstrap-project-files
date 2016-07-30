@@ -57,6 +57,9 @@ a:focus {
   color: #F2583E;
   background: transparent;
 }
+.navbar-default .navbar-nav>li>a {
+  color: #2B3E42;
+}
 .navbar a,
 .navbar a:link,
 .navbar a:visited,
@@ -100,7 +103,6 @@ a:focus {
   .navbar a:active {
     line-height: 50px;
   }
-  .navbar-header,
   .navbar-nav,
   .navbar-nav > li {
     float: none;
@@ -108,11 +110,16 @@ a:focus {
 }
 
 .jumbotron {
-  margin-top: 50px;
+  padding-top: 80px;
   margin-bottom: 60px;
   color: white;
   background: #F2583E;
 }
+@media(min-width: 768px) {
+  .jumbotron {
+    padding-top: 100px;
+  }
+]
 
 section {
   margin: 60px auto;

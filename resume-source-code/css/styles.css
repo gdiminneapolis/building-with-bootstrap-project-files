@@ -123,7 +123,7 @@ a:focus {
   .jumbotron {
     padding-top: 100px;
   }
-]
+}
 
 section {
   margin: 60px auto;
@@ -131,7 +131,7 @@ section {
 
 section > .container > .row {
   border-top: 2px solid #747E80;
-  padding: 60px 0;
+  padding-top: 60px;
 }
 section:first-of-type > .container > .row {
   border-top: 0;
@@ -185,11 +185,13 @@ section:first-of-type > .container > .row {
   background: #F2583E;
   padding: 5px 10px;
   border-radius: 4px;
+  display: inline-block;
 }
 @media(min-width: 768px) {
   #experience h5,
   #education h5 {
     margin: 0;
+    display: block;
   }
 }
 
